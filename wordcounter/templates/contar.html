@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wordcounter</title>
+</head>
+<body>
+    <h1>O texto tem {{qntd}} palavra{{qntd|pluralize}}</h1>
+    <table>
+        <tr>
+            <th>Palavras</th>
+            <th>Quantidade</th>
+        </tr>        
+        {% for x in palavras %}
+        <tr>    
+            <td>{{ x }}</td>
+            <td> vezes</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
