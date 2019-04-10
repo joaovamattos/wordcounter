@@ -13,10 +13,10 @@
             <th>Palavras</th>
             <th>Quantidade</th>
         </tr>        
-        {% for x in palavras %}
+        {% for x in p %}
         <tr>    
-            <td>{{ x }}</td>
-            <td> vezes</td>
+            <td>{{ x.0 }}</td>
+            <td>{{ x.1 }}</td>
         </tr>
         {% endfor %}
     </table>

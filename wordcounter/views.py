@@ -10,7 +10,9 @@ def conta(request):
     print(texto)
     qntd = len(texto.split())
     palavras = texto.split()
+    p = []
     for palavra in palavras:
-        print(palavras.count(palavra))
-    contexto = {'qntd' : qntd, 'palavras' : palavras}
+        x = [palavra, palavras.count(palavra)]
+        p.append(x)
+    contexto = {'qntd' : qntd, 'palavras' : palavras, 'p' : p}
     return render(request, "contar.html", contexto)
