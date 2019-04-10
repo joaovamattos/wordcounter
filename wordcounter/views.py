@@ -14,5 +14,5 @@ def conta(request):
     for palavra in palavras:
         x = [palavra, palavras.count(palavra)]
         p.append(x)
-    contexto = {'qntd' : qntd, 'palavras' : palavras, 'p' : p}
+    contexto = {'qntd' : qntd, 'p' : p}
     return render(request, "contar.html", contexto)

@@ -11,12 +11,12 @@
     <table>
         <tr>
             <th>Palavras</th>
-            <th>Quantidade</th>
+            <th>Ocorrências </th>
         </tr>        
         {% for x in p %}
         <tr>    
             <td>{{ x.0 }}</td>
-            <td>{{ x.1 }}</td>
+            <td>{{ x.1 }} vez{{x.1|pluralize:",es"}}</td>
         </tr>
         {% endfor %}
     </table>
